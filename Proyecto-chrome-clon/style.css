@@ -1,0 +1,222 @@
+*{
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    background: url(https://wallpapercave.com/wp/wp4676588.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 8px;
+    margin-right: 15px;
+}
+.header-container a{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-container a:hover{
+    text-decoration: underline;
+}
+.header-container i{
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.header-container i:hover{
+    background: #4141415b;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+.header-container img{
+    width: 40px;
+}
+.header-container img:hover{
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 1px 2px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 3px rgba(116, 116, 116, 0.212);
+    cursor: pointer;
+}
+.main-container{
+    height: 600px;
+    min-width: 200px;
+}
+.main-img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 210px;
+    padding: 0px 80px;
+}
+.main-img img{
+    min-width:300px;
+    flex-basis: 330px;
+
+}
+.main__search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+.main__search-container form{
+    border-radius: 127px 127px 127px 127px;
+    -moz-border-radius: 127px 127px 127px 127px;
+    -webkit-border-radius: 127px 127px 127px 127px;
+    border: 0px solid #000000;
+    background: #ffffff;
+    width: 630px;
+    height: 50px;
+    margin: 0px 40px;
+    flex-wrap: nowrap;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.main__search-container input{
+    height: 47px;
+    width: 510px;
+    background: none;
+    border: none;
+}
+.main__search-container i{
+    padding: 18px 20px;
+    font-size: 15px;
+    color: #6e6e6e;
+}
+
+.main__search-container input:focus{
+   outline: none;
+   font-size: 18px;
+}
+::placeholder{
+    font-size: 18px;
+}
+.main__search-container button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.shortcut-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.shortcut-background{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    background: none;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
+}
+.shortcut-icon{
+    background: rgb(60, 64, 73);
+    padding: 12px 22px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    height: 60px;
+    width: 60px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+.shortcut-text{
+    color: #fff;
+}
+.shortcut-background:hover{
+    background: rgba(133, 143, 161, 0.658);
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
+    cursor: pointer;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: none;
+    color: #fff;
+    margin: 0px 20px;
+    position: relative;
+    height: 62vh;
+}
+.footer-container i:hover{
+    cursor: pointer;
+    text-shadow: 4px 4px 2px #000000;
+}
+.footer-container b{
+    font-size: 13px;
+}
+.footer-container a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Barra de navegacion responsive*/
+@media screen and (max-width:710px){
+    .main__search-container form{
+        width: 550px;
+    }
+    .main__search-container input{
+        width: 430px;
+    }
+}
+@media screen and (max-width: 630px){
+    .main__search-container form{
+        width: 450px;
+    }
+    .main__search-container input{
+        width: 330px;
+    }
+}
+@media screen and (max-width: 530px){
+    .main__search-container form{
+        width: 350px;
+    }
+    .main__search-container input{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 430px){
+    .main__search-container form{
+        width: 300px;
+    }
+    .main__search-container input{
+        width: 170px;
+    }
+}
+@media screen and (max-width: 365px){
+    .main__search-container form{
+        width: 250px;
+    }
+    .main__search-container input{
+        width: 130px;
+    }
+}
+
+
